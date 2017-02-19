@@ -1,0 +1,22 @@
+html{
+    font-size: 20px;
+    background-color: rgba(100,100,100,0.3);
+    text-align: center;
+}
+div{
+    letter-spacing: 10px;
+    line-height: 3rem;
+}
+div:nth-child(2n+1){
+    color: blue;
+    font-size: 2em;
+}
+div:nth-child(even){
+    color: red;
+}
+div:not(.four){
+    text-transform: uppercase;
+}
+.four~div{
+    text-transform: lowercase;
+}
